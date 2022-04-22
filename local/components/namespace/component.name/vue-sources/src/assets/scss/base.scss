@@ -1,0 +1,30 @@
+@import "vars";
+
+@mixin from($min_width){
+  @media screen and (min-width: $min_width){
+    @content;
+  }
+}
+
+@mixin to($max_width){
+  @media screen and (max-width: $max_width){
+    @content;
+  }
+}
+
+.container {
+  max-width: 287px;
+  margin: 0 auto;
+  @media screen and (min-width: 390px) {
+    max-width: 358px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 735px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1160px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1280px;
+  }
+}

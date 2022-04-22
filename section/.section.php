@@ -1,0 +1,4 @@
+<?
+$sSectionName = "Название раздела";
+$arDirProperties = [];
+
